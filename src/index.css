@@ -70,17 +70,30 @@ body {
 }
 
 .navbar h1 {
-  font-size: 24px;
+  font-size: 50px;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
   margin-left: 15px;
+  transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  text-decoration: underline;
+  color: orange;
+}
+
+.navbar a:active {
+  color: orange; /* Farbe beim Klicken */
+}
+
+.navbar a:visited {
+  color: white; /* Beibehalten der ursprünglichen Farbe nach Besuch */
+}
+
+.navbar a:focus {
+  color: orange; /* Fokus auf den Link */
 }
 
 /* Main Content */
