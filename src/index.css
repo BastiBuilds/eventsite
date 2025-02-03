@@ -73,7 +73,7 @@ button:focus-visible {
   align-items: center;
   padding: 10px 20px;
   background-color: #333;
-  color: white;
+  color: red;
 }
 
 .navbar h1 {
