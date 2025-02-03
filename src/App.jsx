@@ -1,12 +1,15 @@
+import 'react';
 import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
 import SearchPage from './pages/SearchPage';
 import EventListPage from './pages/EventListPage';
 import EventDetailPage from './pages/EventDetailPage';
 
-function App() {
+const App = () => {
     return (
         <div>
+            <Navbar />
             <Routes>
                 <Route path="/" element={<Homepage />} />
                 <Route path="/search" element={<SearchPage />} />
@@ -15,6 +18,6 @@ function App() {
             </Routes>
         </div>
     );
-}
+};
 
 export default App;
