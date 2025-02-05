@@ -33,45 +33,16 @@
     z-index: 0;
 }
 
-/* Galerie */
-.gallery {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel {
-    display: flex;
-    gap: 0;
-    animation: continuousSlide 10s linear infinite; /* Kontinuierliche Animation */
-}
-
-.slide {
-    flex: 0 0 30%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide img {
-    width: 100%; /* Passe die Bildgröße responsiv an */
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    height: 70vh; /* Dynamische Höhe für Responsiveness */
-    object-fit: cover; /* Bilder skalieren und zuschneiden */
-    flex: 0 0 auto;
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .header {
+        height: 150px; /* Kleinere Höhe für Mobilgeräte */
+    }
 }
 
 /* Responsive Anpassungen */
 @media (max-width: 768px) {
     .header {
         height: 150px; /* Kleinere Höhe für Mobilgeräte */
-    }
-
-    .gallery {
-        margin-top: 170px; /* Angepasster Abstand */
-    }
-
-    .slide img {
-        border-radius: 5px; /* Kleinere Abrundung auf kleineren Geräten */
     }
 }

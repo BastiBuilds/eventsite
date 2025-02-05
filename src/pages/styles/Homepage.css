@@ -13,23 +13,25 @@
 
 .carousel {
     display: flex;
-    animation: continuousSlide 10s linear infinite; /* Kontinuierliche Animation */
+    gap: 0;
+    position: relative;
+    animation: continuousSlide 20s linear infinite; /* Kontinuierliche Animation */
 }
 
 .slide {
-    min-width: 100%;
+    flex: 0 0 40%;
     transition: transform 0.5s ease-in-out;
-    flex: 0 0 30%;
 }
 
 .slide img {
-    width: 30%;
+    width: 100%; /* Passe die Bildgröße responsiv an */
     height: auto;
     border-radius: 10px;
-    object-fit: cover; /* Füllt den Bereich aus */
+    object-fit: cover;
+    flex: 0 1 auto;
 }
 
-/* Animation für kontinuierliche Rotation */
+/* Animation für kontinuierliche Rotation*/
 @keyframes continuousSlide {
     0% {
         transform: translateX(0);
@@ -89,6 +91,10 @@
 
 /* Responsive Anpassungen */
 @media (max-width: 768px) {
+    .slide img {
+        border-radius: 5px; /* Kleinere Abrundung auf kleineren Geräten */
+    }
+
     .about {
         max-width: 90%; /* Etwas mehr Breite auf kleinen Geräten */
         padding: 15px;
@@ -135,11 +141,6 @@ ul li {
     color: #333;
 }
 
-/* Karte */
-.map iframe {
-    border-radius: 10px;
-}
-
 /* Call to Action */
 .cta button {
     padding: 10px 20px;
@@ -152,5 +153,48 @@ ul li {
 }
 
 .cta button:hover {
+    background-color: #535bf2;
+}
+
+/* Pop-up Styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none; /* Standardmäßig versteckt */
+}
+
+.popup.active {
+    display: block; /* Sichtbar, wenn aktiv */
+}
+
+.popup h3 {
+    margin-bottom: 10px;
+}
+
+.popup input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup button {
+    padding: 10px 20px;
+    background-color: #646cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
     background-color: #535bf2;
 }
