@@ -1,0 +1,94 @@
+.cta {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta button {
+    padding: 10px 20px;
+    background-color: #646cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.cta button:hover {
+    background-color: #535bf2;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.popup h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.popup p {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.popup input {
+    max-width: 93%;
+    position: relative;
+    padding: 10px 10px;
+    margin: 10px auto; /* Zentrieren und Abstand oben/unten */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Padding wird in der Breite berücksichtigt */
+}
+
+.submit-btn {
+    background-color: #646cff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #535bf2;
+}
+
+.close-btn {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    color: #555;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #333;
+}
