@@ -1,5 +1,7 @@
 import 'react';
 import './styles/Homepage.css';
+import CallToAction from "../components/CallToAction";
+
 
 const Homepage = () => {
     return (
@@ -63,11 +65,7 @@ const Homepage = () => {
             </section>
 
             {/* Call to Action */}
-            <section className="cta">
-                <h2>Stay Updated!</h2>
-                <p>Subscribe to our newsletter to get updates on the latest events near you.</p>
-                <button>Subscribe Now</button>
-            </section>
+            <CallToAction />
         </div>
     );
 };
