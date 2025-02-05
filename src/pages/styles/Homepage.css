@@ -56,9 +56,55 @@
 }
 
 /* Über uns */
-.about,
+.about {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 80%; /* Maximale Breite */
+    margin: 20px auto; /* Zentriert auf der Seite */
+}
+
+.about h2 {
+    font-size: 2.5rem; /* Größerer Titel */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.4rem; /* Größerer Text */
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about img {
+    width: 100%; /* Passt das Bild an den Container an */
+    max-width: 500px; /* Maximale Breite für größere Geräte */
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px; /* Abstand zum Text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .about {
+        max-width: 90%; /* Etwas mehr Breite auf kleinen Geräten */
+        padding: 15px;
+    }
+
+    .about h2 {
+        font-size: 2rem; /* Kleinere Schriftgröße für den Titel */
+    }
+
+    .about p {
+        font-size: 1.2rem; /* Kleinere Schriftgröße für Text */
+    }
+}
+
 .upcoming,
-.map,
 .cta {
     text-align: center;
     padding: 20px;

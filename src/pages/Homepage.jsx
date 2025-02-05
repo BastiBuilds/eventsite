@@ -21,11 +21,31 @@ const Homepage = () => {
 
             {/* Über uns */}
             <section className="about">
-                <h2>About Us</h2>
-                <p>
-                    Welcome to EventFinder! Discover exciting events in your region, from concerts to art exhibits, and everything in between.
-                </p>
+                <h2>Über uns</h2>
+                <div className="about-content">
+                    <div className="about-text">
+                        <p>
+                            Hey! Willkommen bei EventFinder – deiner Plattform für alle coolen Veranstaltungen in deiner Nähe.
+                            Egal, ob du auf Konzerte stehst, Street-Festivals liebst oder einfach neue Orte und Leute entdecken möchtest,
+                            hier bist du genau richtig.
+                        </p>
+                        <p>
+                            Mit EventFinder verpasst du garantiert nichts mehr: die heißesten Partys, die angesagtesten Kunstausstellungen
+                            und die besten Geheimtipps deiner Stadt – alles nur einen Klick entfernt.
+                            Wir zeigen dir, was gerade läuft und helfen dir, deine Freizeit spannender zu machen.
+                        </p>
+                        <p>
+                            Schnapp dir deine Crew, entdecke neue Events und erlebe unvergessliche Momente.
+                            EventFinder macht es dir leicht, den Überblick zu behalten und genau das zu finden, was dich interessiert.
+                            Worauf wartest du? Let’s go!
+                        </p>
+                    </div>
+                    <div className="about-image">
+                        <img src="/pictures/neonParty.jpg" alt="Über uns" />
+                    </div>
+                </div>
             </section>
+
 
             {/* Kommende Events */}
             <section className="upcoming">
@@ -42,20 +62,6 @@ const Homepage = () => {
                         <strong>Wine Tasting in Geneva</strong> - 2025-02-10
                     </li>
                 </ul>
-            </section>
-
-            {/* Karte */}
-            <section className="map">
-                <h2>Find Events Near You</h2>
-                <iframe
-                    title="Event Location Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.3190867796727!2d7.588576415734725!3d47.55959817917985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b9c7c57ae4b1%3A0x6116b49a31660b3a!2sBasel%2C%20Switzerland!5e0!3m2!1sen!2s!4v1672757291635!5m2!1sen!2s"
-                    width="100%"
-                    height="300"
-                    style={{ border: '0' }}
-                    allowFullScreen=""
-                    loading="lazy"
-                ></iframe>
             </section>
 
             {/* Call to Action */}
