@@ -25,19 +25,17 @@ const Homepage = () => {
                 <div className="about-content">
                     <div className="about-text">
                         <p>
-                            Hey! Willkommen bei EventFinder – deiner Plattform für alle coolen Veranstaltungen in deiner Nähe.
-                            Egal, ob du auf Konzerte stehst, Street-Festivals liebst oder einfach neue Orte und Leute entdecken möchtest,
-                            hier bist du genau richtig.
+                            Hey! Willkommen bei EventFinder – deiner Plattform für die angesagtesten Events und Club-Nächte in deiner Nähe.
+                            Egal, ob du auf legendäre Partys, exklusive Konzerte oder spannende Festivals stehst – hier findest du alles,
+                            was das Nachtleben und die Event-Szene zu bieten haben.
                         </p>
                         <p>
-                            Mit EventFinder verpasst du garantiert nichts mehr: die heißesten Partys, die angesagtesten Kunstausstellungen
-                            und die besten Geheimtipps deiner Stadt – alles nur einen Klick entfernt.
-                            Wir zeigen dir, was gerade läuft und helfen dir, deine Freizeit spannender zu machen.
+                            Mit EventFinder bleibst du immer ready: die heissesten Events, die besten DJs und die coolsten Locations in deiner Stadt –
+                            alles nur einen Klick entfernt. Wir zeigen dir, wo die Action ist, und helfen dir, jede Nacht unvergesslich zu machen.
                         </p>
                         <p>
-                            Schnapp dir deine Crew, entdecke neue Events und erlebe unvergessliche Momente.
-                            EventFinder macht es dir leicht, den Überblick zu behalten und genau das zu finden, was dich interessiert.
-                            Worauf wartest du? Let’s go!
+                            Schnapp dir deine Crew, hol dir die neuesten Party-Infos und entdecke die besten Spots, um zu feiern.
+                            Mit EventFinder hast du immer den Überblick und verpasst garantiert nichts. Worauf wartest du? Das nächste Highlight wartet schon auf dich!
                         </p>
                     </div>
                     <div className="about-image">
