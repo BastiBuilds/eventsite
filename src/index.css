@@ -36,11 +36,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 50px;
   background-color: #2e2e2e;
   color: white;
   position: sticky;
-  top: 140px;
+  top: 100px;
   z-index: 1000;
 }
 
@@ -191,7 +191,6 @@ body {
 main {
   flex: 1;
   margin: 20px; /* Abstand zum Rand */
-  padding-top: 200px; /* Platz für Header und Navbar */
 }
 
 /* Footer */
